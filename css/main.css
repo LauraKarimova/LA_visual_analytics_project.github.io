@@ -1,0 +1,244 @@
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1{
+    /* background-color: #3939a4; */
+    text-align: center;
+    font-family: Helvetica;
+    margin: 0;
+  }
+  
+  .body {
+    background-color: #fcfcfc;
+    font-family: Helvetica;
+  }
+  
+  .container-fluid {
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+    background-color: #619ee1;
+  }
+  
+  .charts {
+    margin: 0;
+    align-items: center;
+    height: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-gap: 10px;
+    position: relative;
+    width: 100%;
+	  margin: 5 auto;
+  }
+
+  .charts-title {
+    margin: 0;
+    height: 100%; 
+    font-weight: bold;
+    font-style: oblique;
+    position: relative;
+    width: 100%;
+	  margin: 5 auto;
+	  height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-gap: 10px;
+    font-size: 14px;
+  }
+    
+  #desc{
+    align-self: start;
+    left: 830px;
+    position: absolute;
+    width: 500px;
+    
+  }
+
+  .bar_info{
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bar_info_item{
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align:center;
+  }
+  .pct_abortions{
+    background-color: #4451ba;
+  }
+  .pct_safeabs{
+    background-color: #619ee1;
+  }
+  .pct_unsafeabs{
+    background-color: #a5b783;
+  }
+
+  #myList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 900px;
+  }
+  .bar_info_item{
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align:center;
+  }
+  .average_all_abortion_costs_service{
+    background-color: #4451ba;
+  }
+  .average_all_abortion_costs_safe{
+    background-color: #619ee1;
+  }
+  .average_all_abortion_costs_lesssafe{
+    background-color: #a5b783;
+  }
+  .groupBar_2 {
+    margin: 0;
+    height: 80%; 
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10px;
+    position: relative;
+    width: 100%;
+	  margin: 5 auto;
+  }
+
+  .map_range{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 20px;
+    margin: 0 auto 30px;
+    right: 230px;
+  }
+
+  .map_range_item{
+    position: relative;
+    flex-shrink: 0;
+    bottom: 100%;
+  }
+  .map_range_bar{
+    width: 75%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(-45deg, rgb(8, 81, 156), rgb(198, 234, 241));
+    
+  }
+  .map_range_max{
+    right: 0;
+  }
+  #for-map{
+    display: grid;
+    grid-template-columns: 65fr 1fr;
+  }
+  #map{
+    display: grid;
+    grid-template-columns: 65fr 1fr;
+    grid-gap: 10px;
+    position: relative;
+    width: 80%;
+	  margin: 5 auto;
+  }
+
+  td {
+    background-color: rgb(210, 220, 231);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 400px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  #table-container {
+    overflow-y: scroll;
+    height: 430px; /* or any other desired height */
+  }
+
+  #buttons {
+    padding: 5px;
+    position: relative;
+    
+  }
+
+  button {
+    background-color: #619ee1;
+    color: white;
+    /* font-size: 16px; */
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  button:hover {
+    background-color: #3388e3;
+  }
+  button:active {
+    background-color: #137cec;
+  }
+
+
+  #myList_2{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 900px;
+  }
+  .bar_info_item_2{
+    
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align:center;
+  }
+  .average_all_pac_costs{
+    background-color: #4451ba;
+  }
+  .average_all_pac_costs_safe_abortion{
+    background-color: #619ee1;
+  }
+  .average_all_pac_costs_unsafe_ab{
+    background-color: #a5b783;
+  }
+
+  .groupBar_4 {
+    margin: 0;
+    height: 80%; 
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 10px;
+    position: relative;
+    width: 100%;
+	  margin: 5 auto;
+  }
+
+  .mytable {
+    margin: 0;
+    height: 80%; 
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px;
+    position: relative;
+    width: 100%;
+	  margin: 5 auto;
+  }

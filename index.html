@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abortions per regions</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div style="font-size: 20px;">
+	<div class="container-fluid p-5 bg-primary text-white text-center">
+	<br>	
+	<h1 style="color: rgb(255, 255, 255); font-size: 35px;">Abortions Around the World</h1>
+	<br>
+	<p style="text-align: center; color: rgb(255, 255, 255); font-style: oblique;">How are the numbers of abortion deaths related to the prices of abortion and post-abortion care services in different countries and regions of the world?
+		</p>
+	</div>
+
+	<div style="margin-left: 25px;">
+		<p style="font-weight: bold;">WHO AND WHAT IS OUR TOOL FOR? </p>
+		Our tool is designed for a wide range of users, including:
+		<ul>
+			<li>Researchers</li>
+			<li>Policy makers</li>
+			<li>Healthcare professionals</li>
+			<li>General public</li>
+		</ul>
+	</div>
+	<hr>
+	<div style="margin-left: 25px; margin-right: 25px;">
+		<p style="font-weight: bold;">WHAT THE TOOL SHOWS? </p>
+		Webpage presents visualizations on abortion rates and deaths caused by abortions in different countries and regions. It shows the number of abortions of different types (safe, less safe, and least safe) for different regions of the world, such as Africa, Latin America, Asia, Europe, and Oceania. The tool also presents data on the rate of deaths caused by abortions of these types in these regions. 
+		<br>
+		<br>
+		The tool presents a comprehensive analysis of data on abortion rates, safety, costs and mortality rate caused by abortions in different countries and regions. It helps to understand the correlation between the cost of abortion services and the rate of deaths caused by abortions, and it may also help to identify areas where further research or policy changes could improve accessibility and safety of abortion services.
+	</div>
+	<hr>
+	<div style="margin-left: 25px; margin-right: 25px;">
+		<p style="font-weight: bold;">DATA </p>
+		In this research, we used the <a href="https://osf.io/m85s9/">Adding It Up All Women Data Set</a> obtained from the website of the Guttmacher Institute, which is a leading research and policy organization committed to advancing sexual and reproductive health and rights (SRHR) worldwide.
+		<br>
+		<br>
+		From the data presented, we used:
+		<ul>
+			<li>number of abortions of three types (safe, less and least safe) (in whole numbers)</li>
+			<li>deaths caused by abortions (percentage)</li>
+			<li>prices for abortion and post-abortion care services (U.S. dollars)</li>
+		</ul>
+	</div>
+	<hr>
+	<div style="margin-left: 25px; margin-right: 25px;">
+		<p style="font-weight: bold;">LIMITATIONS</p>
+		The main limitation of our tool is that the data we used does not have information for all countries of the world, that is, we were able to analyze only for the available countries.
+		<br>
+	</div>
+	<hr>
+
+	<p style="font-weight: bold; margin-left: 25px;">NUMBER OF ABORTIONS IN DIFFERENT REGIONS</p>
+    <div class="charts-title">
+		
+            <div style="text-align: center">
+                <p id="region" style="font-size: 15px;">Total number of abortions</p>
+            </div>
+            
+            <div style="text-align: center; margin-left: -200px;">
+                <p id="region-name" style="font-size: 15px;">Statistics on the number of different types of abortions around the world</p>
+            </div>
+    </div>
+	<div class="charts">
+		<div id="pie-chart">
+        </div>
+        
+		<div id="bar-chart">
+        </div>
+		<div id="desc">
+			<p style="text-align: left; color: rgb(0, 0, 0); border:1px solid black; padding: 8px; background-color: #edf2e9;">
+				Pie chart shows the total number of all types of abortion for each region. Each slice of the graph is clickable if you click on a specific region, the bar chart below shows statistics on the number of safe, less safe and unsafe abortions for each region. 
+			</p>
+			<p>
+				Looking at the pie chart, the first thing you can notice is that the largest number of all abortions among these regions occurs in Asia. In addition, in Asia and Latin America, more abortions are classified as less safe, in Africa and Oceania as unsafe, while in Europe they are classified as safe. 
+			</p>
+		</div>
+	</div>
+	<hr>
+
+	<div class="groupBar_2">
+		<div> 
+			<p style="font-weight: bold; margin-left: 25px;">DEATH RATE CAUSED BY DIFFERENT TYPES OF ABORTIONS BY REGIONS</p>
+		</div> 
+		<div class="for_third graph">
+			<ul class="bar_info">
+				<li class="bar_info_item pct_abortions" style="display: inline-block;">Total abortion death rate</li>
+				<li class="bar_info_item pct_safeabs" style="display: inline-block;">% of deaths (safe)</li>
+				<li class="bar_info_item pct_unsafeabs" style="display: inline-block;">% of deaths (less safe)</li>
+			</ul>
+		</div>
+	</div>
+		
+	<div class="groupBar_2">
+		<div> <p style="margin-left: 25px;">
+			This chart shows the death rate caused by safe and unsafe abortions and abortions in general for different regions of the world. Each bar represents a region, with the height of the bar indicating the death rate caused by abortions in that region and the sections within the bar representing the death rate caused by each type of abortion.
+		</p>
+		</div>
+		<div id="groupBar"></div>
+	</div>
+	<hr>
+	<div style="margin-top: 40px">
+		<div class="map_range">
+			<div class="map_range_item map_range_min">min</div>
+			<div class="map_range_bar" style="font-size: 15px; font-weight: bold; font-style: oblique;">Deaths caused by unsafe abortions</div>
+			<div class="map_range_item map_range_max">max</div>
+		</div>
+		<div id="for-map">
+			<div id="map"></div>
+			<div style="position: absolute; width: 470px; left: 900px;"> 
+				<p style="text-align: left; color: rgb(0, 0, 0); border:1px solid black; padding: 8px; background-color: #edf2e9;">
+					By hovering over a country, you can see the percentage of deaths in that country.
+				</p>
+				<p>
+					A choropleth map shows the death rates caused by unsafe abortions (less safe and least safe) for different countries. Each country or region is colored according to the death rate in that country, with colors indicating a range of values and a key or legend providing information on the specific death rate values that correspond to each color.
+				</p>	
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr>
+	<p style="font-weight: bold; margin-left: 25px;">COSTS OF ABORTION AND PAC SERVICES FOR DIFFERENT REGIONS</p>
+	<div style="margin-left: 25px;">
+		<button id="button1">Abortion service costs</button>
+		<button id="button2">Post abortion care service costs</button>
+		<ul id="myList" style="display: none;"> 
+			<li class="bar_info_item average_all_abortion_costs_service" style="display: inline-block;">Average service costs</li>
+			<li class="bar_info_item average_all_abortion_costs_safe" style="display: inline-block;">Average service costs (safe)</li>
+			<li class="bar_info_item average_all_abortion_costs_lesssafe" style="display: inline-block;">Average service costs (less safe)</li>
+		</ul>
+		<ul id="myList_2" style="display: none;">
+			<li class="bar_info_item_2 average_all_pac_costs" style="display: inline-block;">Average PAC costs</li>
+			<li class="bar_info_item_2 average_all_pac_costs_safe_abortion" style="display: inline-block;">Average PAC costs (safe)</li>
+			<li class="bar_info_item_2 average_all_pac_costs_unsafe_ab" style="display: inline-block;">Average PAC costs (less safe)</li>
+		</ul>
+	</div>
+	<div class="groupBar_4" style="margin-left: 25px;">
+		<div id="stackedGroupBar"> </div>
+		<div style="width: 520px;">
+			<p style="text-align: left; color: rgb(0, 0, 0); border:1px solid black; padding: 8px; background-color: #edf2e9;">
+				By default, a chart with prices for abortion services is displayed, by switching the buttons, you can also view the prices for post-abortion care services.
+			</p>
+			<p>
+				These stacked bar charts show the costs of abortion services and post-abortion care services for different regions of the world and for the three types of abortions (safe, less safe, and least safe). Each bar represents a region, with the height of the bar indicating the total cost of the services in that region and the sections or stacked layers within the bar representing the cost of each type of abortion. The charts allow for easy comparison of the total cost of the services and the relative proportion of each type of abortion across different regions.
+			</p>
+		</div>
+	</div>
+	<hr>
+
+	<p style="font-weight: bold; margin-left: 25px;">COSTS OF ABORTION SERVICES FOR ALL COUNTRIES</p>
+	
+	<div class="mytable">
+		
+		<div style="margin-left: 25px; margin-right: 25px;">
+			<p style="text-align: left; color: rgb(0, 0, 0); border:1px solid black; padding: 8px; background-color: #edf2e9;">
+				The table can be sorted in descending and ascending order of each column. Scroll is also available.
+			</p>
+			<p>
+				In this table, we have presented the costs of abortion services in general, the cost of safe and unsafe abortions for all countries.
+				<br>
+				<br>
+				If we look at prices specifically in the countries of Libya and Sudan, what we see is that in Sudan, abortion services are almost 4 times more expensive than in Libya. Whereas for both countries, the prices for less safe abortions are 2 times lower than safe ones, therefore, most likely, people resort to the first type more often. That is, in Sudan, abortions of any kind are much more expensive, but the death rate from abortions in the country is lower.
+			</p>
+		</div>
+
+		<div>
+			<div id="buttons">
+				<button id="sort-button1">Column 1</button>
+				<button id="sort-button2">Column 2</button>
+				<button id="sort-button3">Column 3</button>
+				<button id="sort-button4">Column 4</button>
+				<button id="sort-button5">Column 5</button>
+			</div>
+			<br>
+			<div class="for_table">
+				<div id="table-container"></div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container-fluid p-5 bg-primary text-white text-center"><br><br></div>
+
+	<script src="js/d3.v7.min.js"></script>
+	<script src="js/main.js"></script>
+</div>
+</body>
+</html>
